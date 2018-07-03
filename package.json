@@ -1,0 +1,33 @@
+{
+  "name": "react_redux_parcel_flat_file",
+  "version": "1.0.0",
+  "description": "A very basic beginner friendly flat file react+redux+parcel made easy",
+  "main": "main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel index.html ",
+    "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url /",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "react",
+    "parcel",
+    "flat-file"
+  ],
+  "author": "mdk",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-react-app": "^3.1.2",
+    "parcel-bundler": "^1.9.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-hot-loader": "^4.3.3",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}
