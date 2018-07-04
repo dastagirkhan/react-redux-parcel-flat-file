@@ -2,7 +2,7 @@
   "name": "react_redux_parcel_flat_file",
   "version": "1.0.0",
   "description": "A very basic beginner friendly flat file react+redux+parcel made easy",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development parcel index.html ",
     "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url /",

@@ -6,7 +6,7 @@ A very basic beginner friendly flat file react+redux+parcel made easy
 
 * `parcel-bundler`
 * `react`
-* `react-dom`,
+* `react-dom`
 * `redux`
 * `react-redux`
 * `prop-types`
@@ -19,8 +19,8 @@ Clone and install deps
 ```
 git clone git@github.com:dastagirkhan/react-redux-parcel-flat-file.git
 cd react-redux-parcel-flat-file
-npm install
-npm start
+npm install or yarn
+npm start or yarn start
 ```
 
 Then open `http://localhost:1234` and edit `main.js` and press save. Parcel

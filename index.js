@@ -4,6 +4,7 @@ import { createStore } from "redux";
 import { Provider, connect } from "react-redux";
 import PropTypes from "prop-types";
 
+
 // Reducer
 const name = (state = {}, action) => {
   switch (action.type) {
@@ -15,15 +16,15 @@ const name = (state = {}, action) => {
 };
 
 // Redux store
-const store = createStore(name, { name: "MDK" });
+const store = createStore(name, { name: "MDKD" });
 
 // React Component
 class Greeting extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
-  }
-
+  } 
+ 
   handleChange(e) {
     this.props.changeName(e.target.value);
   }
@@ -61,14 +62,18 @@ const GreetingConnection = connect(
 )(Greeting);
 
 // Rendering,
-ReactDom.render(
-  <Provider store={store}>
-    <GreetingConnection />
-  </Provider>,
-  document.getElementById("mount")
-);
-
+function renderApp(){
+  ReactDom.render(
+    <Provider store={store}>
+      <GreetingConnection />
+    </Provider>,
+    document.getElementById("mount")
+  );
+}
+renderApp();
+   
 // Hot Module Replacement
 if (module.hot) {
-  module.hot.accept();
+  module.hot.accept(renderApp);
 }
+  
