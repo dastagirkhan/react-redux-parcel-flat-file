@@ -23,7 +23,7 @@ npm install or yarn
 npm start or yarn start
 ```
 
-Then open `http://localhost:1234` and edit `main.js` and press save. Parcel
+Then open `http://localhost:1234` and edit `index.js` and press save. Parcel
 will automagically hot reload you files whenever you make changes.
 
 ## Building for Production
